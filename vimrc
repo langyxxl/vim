@@ -108,6 +108,7 @@ nnoremap <C-n> :call NumberToggle()<cr>
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 
+let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.obj$', '\.o$', '\.so$', '\.egg$', '^\.git$', '^\.svn$', '^\.hg$' ]
 map <Leader>n :NERDTreeToggle<CR>
 map <Leader>e :NERDTreeFind<CR>
 
@@ -115,6 +116,17 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+
+noremap <leader>1 1gt
+noremap <leader>2 2gt
+noremap <leader>3 3gt
+noremap <leader>4 4gt
+noremap <leader>5 5gt
+noremap <leader>6 6gt
+noremap <leader>7 7gt
+noremap <leader>8 8gt
+noremap <leader>9 9gt
+noremap <leader>0 :tablast<cr>
 
 nnoremap ; :
  " 去掉搜索高亮                      
