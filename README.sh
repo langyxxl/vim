@@ -1,7 +1,7 @@
 #!/bin/bash -xe
 
 
-sudo apt install build-essential cmake python3-dev
+sudo apt install build-essential cmake python3-dev curl vim silversearcher-ag
 
 BASEDIR=$(dirname $0)
 cd $BASEDIR
