@@ -16,6 +16,7 @@ Plug 'majutsushi/tagbar'
 
 " copy ctags to home
 "Plug 'mmorearty/elixir-ctags' 
+Plug 'vim-erlang/vim-erlang-tags'
 Plug 'slashmili/alchemist.vim'
 Plug 'elixir-editors/vim-elixir'
 Plug 'mhinz/vim-mix-format'
