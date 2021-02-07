@@ -92,14 +92,14 @@ set smartcase
 
 " 相对行号: 行号变成相对，可以用 nj/nk 进行跳转
 set relativenumber number
-au FocusLost * :set norelativenumber number
-au FocusGained * :set relativenumber
+" au FocusLost * :set norelativenumber number
+" au FocusGained * :set relativenumber
 " 插入模式下用绝对行号, 普通模式下用相对
 autocmd InsertEnter * :set norelativenumber number
 autocmd InsertLeave * :set relativenumber
 function! NumberToggle()
   if(&relativenumber == 1)
-    set norelativenumber number
+    set norelativenumber nonumber
   else
     set relativenumber
   endif
@@ -227,4 +227,9 @@ let g:mix_format_on_save = 1
         \ }
 " }}}
 
-
+if system('uname')=~'Darwin'
+  let g:CtrlSpaceFileEngine = "file_engine_darwin_arm64"
+endif
+set backspace=indent,eol,start
+set wrap
+"au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
