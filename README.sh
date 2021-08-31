@@ -24,3 +24,6 @@ cd ~/.vim/plugged/YouCompleteMe
 git submodule update --init --recursive
 
 python3 install.py --clang-completer --go-completer --rust-completer
+
+#archlinux
+pacman -S cmake gcc python3 base-devel vim
