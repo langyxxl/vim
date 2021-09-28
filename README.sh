@@ -3,6 +3,10 @@
 
 sudo apt install build-essential cmake python3-dev curl vim silversearcher-ag
 
+#archlinux
+#pacman -S cmake gcc python3 base-devel vim
+
+
 BASEDIR=$(dirname $0)
 cd $BASEDIR
 CURRENT_DIR=`pwd`
