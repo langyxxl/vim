@@ -233,3 +233,4 @@ endif
 set backspace=indent,eol,start
 set wrap
 "au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
+let g:ctrlsf_backend = 'ack'
